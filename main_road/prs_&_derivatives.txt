@@ -1,0 +1,27 @@
+## Commands to calcula the Polygenic Risk Score (PRS), the PRS covariated by PCs, the corrected PRS and the Principal Components (PCs)
+## Author: Gabrielle Navarro
+## Updated in: 18/10/2021
+
+#########
+## PRS ##
+#########
+Rscript PRSice.R --prsice PRSice_linux --base [gwas_reference] --target [your_sample] --out [prs_output_file] --binary-target T --thread 10 --all-score --fastscore T --bar-levels 0.0001,0.001,0.01,0.05,0.1,0.5,1.0 --pheno [pheno_file]
+
+###########################
+## PRS COVARIATED BY PCs ##
+###########################
+Rscript PRSice.R --dir . --prsice PRSice_linux --base [gwas_reference] --target [your_sample] --thread 10 --stat OR --binary-target T --out [prs_output_file] --score avg --cov [pcs_output_file.eigenvec] --cov-col @PC[numbers_considered_of_pcs] --bar-levels 0.001,0.01,0.05,0.1,0.2,0.3,0.4,0.5,0.8 --all-score T --pheno [pheno_file]
+
+#################
+# CORRECTED PRS #
+#################
+# O PRS corrigido nada mais e que os resíduos de uma regressão linear, que leva em consideracao o PRS (Best_Score) e os PCs (PCA)
+corrected_PRS <- lm(ARQUIVO$PRS ~ ARQUIVO$PC_1 + ARQUIVO$PC_2 + ARQUIVO$PC_3 + ARQUIVO$PC_4 + ARQUIVO$PC_5 + ARQUIVO$PC_6 + ARQUIVO$PC_7 + ARQUIVO$PC_8 + ARQUIVO$PC_9 + ARQUIVO$PC_10)
+
+residuos_prs <- residuals(PRScorrigido)
+View(residuos_prs)
+
+#########
+## PCs ##
+#########
+./plink2 --bfile [your_sample] --pca [number_of_choose] --make-bed --out [pcs_output_file]
