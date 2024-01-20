@@ -1,4 +1,4 @@
-## Steps to reach the environmental score
+## Passos para se calcular o PERS | Steps to calculate PERS
 ## Author: Gabrielle Navarro
 ## Updated in: 18/10/2021
 
