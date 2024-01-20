@@ -1,4 +1,4 @@
-<h6> Don't speak Portuguese?! <a href = "">Click here</a> to view this page in English.</h6>
+<h6> Don't speak Portuguese?! <a href = "https://github.com/gosvnavarro/The_Path_Masters_Journey/blob/main/main_road/README-en.md">Click here</a> to view this page in English.</h6>
 
 Abaixo estão descritos os scripts principais contidos nessa pasta e algumas informações relevantes:
 <br>
