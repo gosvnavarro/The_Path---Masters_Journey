@@ -1,0 +1,50 @@
+## Interesting commands in Bash
+## Author: Gabrielle Navarro
+## Updated in: 18/10/2021
+
+########################################################
+# CRIAR ARQUIVO COM AS SEMELHANCAS ENTRE DOIS ARQUIVOS #
+########################################################
+grep -f arquivo_a arquivo_b > semelhantes.txt
+
+#######################################################
+# CRIAR ARQUIVO COM AS DIFERENCAS ENTRE DOIS ARQUIVOS #
+#######################################################
+grep -v -f arquivo_a arquivo_b > diferentes.txt
+
+#############################################################################
+# CRIAR ARQUIVO QUE MOSTRE QUAIS LINHAS SAO SEMELHANTES ENTRE DOIS ARQUIVOS #
+#############################################################################
+comm <( sort arquivo_a ) <( sort arquivo_b ) > merged.txt
+
+####################################################################################
+# CRIAR ARQUIVO APENAS COM AS LINHAS QUE ESTAO CONTIDAS NO ARQUIVO BASE/REFERENCIA #
+####################################################################################
+grep -wFf arquivo_base.txt arquivo_c.txt > arquivo_final.txt
+
+##########################################################################################
+# MODIFICAR O ARQUIVO .BIM PARA FICAR DE ACORDO COM O GWAS BASE PARA O PRS SER CALCULADO #
+##########################################################################################
+mv arquivo_d.bim arquivo_d_ori.bim
+awk '{print $1,$1":"$4,$3,$4,$5,$6}' arquivo_d_ori.bim > arquivo_d.bim
+
+############################################
+# CRIAR ARQUIVO APENAS COM OS MATCHING IDS #
+############################################
+awk -F'\t' 'NR==FNR{c[$1]++;next};c[$1] > 0' arquivo_e.txt arquivo_f.txt > arquivo_final.txt
+
+##############################################################################################
+# CRIAR UMA COPIA DE UM ARQUIVO, ADICIONANDO UM CARACTERE NA FRENTE DE UMA COLUNA ESPECIFICA #
+##############################################################################################
+awk '{print $1,"C"$2, $3}' arquivo_f.txt > arquivo_f-2.txt
+
+###################################################
+# REMOVER O CARACTERE QUE ESTA NO COMECO DA LINHA #
+###################################################
+sed 's/^.$2//' arquivo_g.txt > arquivo_g-2.txt
+
+#######
+# SSH #
+#######
+ssh identificacao@IP #acessar
+scp ./arquivo identificacao@IP_de_destino:~/local_de_destino #copiar arquivos
