@@ -1,6 +1,6 @@
 # The Path - Master's Journey (Side Road)
 
-<h6> Don't speak Portuguese?! <a href = "https://github.com/gosvnavarro/The_Path_Masters_Journey/blob/main/side_rode/README-en.md">Click here</a> to view this page in English.</h6>
+<h6> Don't speak Portuguese?! <a href = "https://github.com/gosvnavarro/The_Path_Masters_Journey/blob/main/side_road/README-en.md">Click here</a> to view this page in English.</h6>
 
 Coleção de scripts com comandos usados não tão recorrentemente mas que foram utéis em algum momento; comandos em bash e R. Abaixo estão descritos os scripts e algumas informações relevantes:
 <br>
@@ -10,13 +10,13 @@ Coleção de scripts com comandos usados não tão recorrentemente mas que foram
         <li>Compilado de comandos aleatórios para manipulação de tabelas e dados em R.</li>
     </ol>
     </li>
-		<br>
+    <br>
     <li><b>a_small_ocean_of_bash</b>
-				<ol>
+    <ol>
         <li>Compilado de comandos aleatórios para manipulação de tabelas e dados em bash.</li>
-        </ol>
-				</li>
-		<br>
+    </ol>
+    </li>
+    <br>
     <li><b>backup_statistics.R</b>
     <ol>
         <li>Compilado de análises estatísticas secundárias.</li>
