@@ -1,34 +1,22 @@
-# The_Path - Masters_Journey
+# The Path - Master's Journey
 
 <h6> Não fala inglês?! <a href = "https://github.com/gosvnavarro/The_Path/blob/Main_Road/README.md">Clique aqui</a> para ver essa página em Português.</h6>
 
-Collection of scripts used for the manipulation and analysis of genetic and environmental data in the development of a master's project carried out between 2019 and 2021. The main scripts and some relevant information are described below:
+Collection of scripts used for the manipulation and analysis of genetic and environmental data in the development of a master's project carried out between 2019 and 2021.
+<br>
+<br>
+This collection is divided into two levels:
 <br>
 <ol>
-    <li><b>prs_&_derivatives.txt</b>
+    <li><b>main_road</b>
     <ol>
-        <li>PRS = Polygenic Risk Score.</li>
-        <li>PRSice, version 2.</li>
-        <li>Performed via the command line (terminal/prompt).</li>
+        <li>Arquivos principais usados no projeto.</li>
     </ol>
     </li>
-				<br>
-    <li><b>pers_score.R</b>
-				<ol>
-        <li>PERS = Poly Environmental Risk Score.</li>
-        <li>It's important that the data used for the calculation (input table) are in binary form (YES / NO) or with the respective odds ratios (if applicable).</li>
-        <li>Before uploading the file to R, it is recommended to save it in '.csv' format.</li>
-								<li>The order described here of the environmental variables follows the order developed in the reference article ('The "polyenviromic risk score": Aggregating environmental risk factors predicts conversion to psychosis in familial high-risk subjects', Padmanabhan JL, et al. 2016).</li>
-    </ol>
-				</li>
-				<br>
-    <li><b>statistical_analysis.R</b>
+    <br>
+    <li><b>side_road</b>
     <ol>
-        <li>Statistical analysis (correlation, regression, etc.) in R.</li>
-        <li>Before uploading the file to R, it is recommended to save it in '.csv' format.</li>
+        <li>Arquivos secundários usados no projeto.</li>
     </ol>
     </li>
 </ol>
-<br>
-<br>
-If you're feeling curious still, check out the folder 'Side_Road' for more (random) scripts.
