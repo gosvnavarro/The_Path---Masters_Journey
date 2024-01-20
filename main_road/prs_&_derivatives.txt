@@ -1,4 +1,4 @@
-## Commands to calcula the Polygenic Risk Score (PRS), the PRS covariated by PCs, the corrected PRS and the Principal Components (PCs)
+## Comandos usados para se calcular o PRS, PRS covariado pelos PCs, PCR corrigido e os PCs | Commands used to calculate PRS, PRS covaried by PCs, corrected PCR and PCs
 ## Author: Gabrielle Navarro
 ## Updated in: 18/10/2021
 
