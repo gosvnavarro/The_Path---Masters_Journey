@@ -1,4 +1,4 @@
-# The_Path - Masters_Journey, Main Road
+# The Path - Master's Journey, Main Road
 
 <h6> Don't speak Portuguese?! <a href = "https://github.com/gosvnavarro/The_Path_Masters_Journey/blob/main/main_road/README-en.md">Click here</a> to view this page in English.</h6>
 
