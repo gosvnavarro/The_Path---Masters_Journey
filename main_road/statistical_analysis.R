@@ -1,4 +1,4 @@
-## Basic and applied statistics
+## Estatística Básica e Aplicada | Basic and applied statistic
 ## Author: Gabrielle Navarro
 ## Updated in: 18/10/2021
 
